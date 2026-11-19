@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide — All 55 PS5 Trophies, Roadmap &amp; Tracker</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI PlayStation 5 trophies: official list, cited guides, roadmap to the platinum, saved progress, filters and a spoiler setting.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">GRAND THEFT AUTO VI &middot; PLAYSTATION 5 &middot; OFFLINE GUIDE</p>
+    <h1>GTA VI Trophy Guide</h1>
+    <p class="lede">Every one of the 55 trophies, explained in plain words with its sources, on the road to the platinum. Tick them off as you earn them — your progress stays in this browser, and the guide works with the network off.</p>
+    <div class="progress-block" id="progressBlock">
+      <div class="progress-line"><span id="progressText">0 of 55 earned</span><span id="progressPct">0%</span></div>
+      <div class="progress-bar" role="progressbar" aria-label="Trophies earned" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progressBar"><div class="progress-fill" id="progressFill"></div></div>
+      <p class="progress-note" id="progressNote">Earn the other 54 trophies and the platinum is yours.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="roadmap" id="roadmap" aria-labelledby="roadmapTitle">
+    <h2 id="roadmapTitle">Roadmap to the Platinum</h2>
+    <p class="section-intro">One playthrough is enough, about 200 hours. There is no mission replay and cheats disable trophies, so keep a manual save at the start and end of each chapter. Only one trophy can be missed — it is flagged below.</p>
+    <div class="missable-alert" id="missableAlert" role="alert">
+      <strong>&#9888; Only one trophy can be missed:</strong>
+      <span><strong>Positive Mental Attitude</strong> — meditate at every spot. During Chapter 1, after the mission Down to Earth, talk to Lucia in the kitchen in the morning, follow her to the balcony and accept the meditation. That one never comes back.</span>
+    </div>
+    <ol class="stages" id="stages"></ol>
+  </section>
+
+  <section class="tracker" id="tracker" aria-labelledby="trackerTitle">
+    <h2 id="trackerTitle">Trophy Tracker — all 55</h2>
+
+    <div class="controls" id="controls">
+      <label class="search-label">Search <input type="search" id="search" placeholder="Search by trophy name…" autocomplete="off"></label>
+      <label>Kind
+        <select id="kindFilter">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="missable">Missable</option>
+          <option value="collectibles">Collectibles</option>
+          <option value="activities">Activities</option>
+          <option value="strangers">Strangers</option>
+          <option value="world">World &amp; crime</option>
+          <option value="online">Online</option>
+        </select>
+      </label>
+      <label>Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Status
+        <select id="statusFilter">
+          <option value="all">Earned &amp; unearned</option>
+          <option value="earned">Earned only</option>
+          <option value="unearned">Unearned only</option>
+        </select>
+      </label>
+      <label class="spoiler-toggle"><input type="checkbox" id="spoilerToggle"> Hide story spoilers until earned</label>
+      <button type="button" id="exportBtn">Export progress</button>
+      <label class="import-label">Import progress <input type="file" id="importInput" accept="application/json,.json"></label>
+      <button type="button" id="resetBtn" class="quiet">Reset progress</button>
+    </div>
+    <p class="filter-note" id="filterNote"></p>
+    <p class="online-note">There are no online trophies in GTA VI — every trophy is earned in single-player, offline. The Online filter is here so you can check that for yourself: it finds nothing.</p>
+
+    <div class="cards" id="cards"></div>
+    <p class="empty" id="emptyState" hidden>No trophies match these filters. Clear the search or pick another kind.</p>
+  </section>
+
+  <section class="about" aria-labelledby="aboutTitle">
+    <h2 id="aboutTitle">About this guide</h2>
+    <p>Names, descriptions and grades are shown exactly as PlayStation publishes them; 28 trophies are hidden on PlayStation until earned. Every guide is written in this guide&rsquo;s own words and names its sources beside it — the facts come from the PowerPyx GTA 6 trophy guide and roadmap and the CryptoGames trophy list, which agree on all 55 names. Five trophies are still unconfirmed by those sources and say so in their guide. No Rockstar artwork or logo is used anywhere: the look is our own. Progress is saved only in your browser (localStorage) and can be exported to a file and imported back.</p>
+    <p class="sources-line">Sources: <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</a> &middot; <a href="https://cryptogames.gg/gta-6-trophies-achievements-full-list/">CryptoGames — GTA 6 Trophies: Full List</a> &middot; <a href="https://www.gtavicecityhub.com/achievements">GTA Vice City Hub — Achievements</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>Unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive; this guide is not affiliated with Rockstar Games.</p>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
